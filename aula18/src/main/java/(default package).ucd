@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="(default package)" size="1073,507" id="" metadata="uml2-1.0" initialized="true" scrolledY="60" tag="1000" key="32303037303533312D313030302061756C6131362F6D63617276616C686F">
+  <children xsi:type="editmodel:ClassEditModel" name="HtmlTransformer" location="0,45" size="196,100" id="tohtml/HtmlTransformer" runTimeClassModel="HtmlTransformer(Ljava.lang.Object;),getRoot()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="173,34">
+      <children xsi:type="editmodel:MethodEditModel" name="HtmlTransformer" id="tohtml/HtmlTransformer#HtmlTransformer(Ljava.lang.Object;Ltohtml.HtmlFormatter;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRoot" id="tohtml/HtmlTransformer#getRoot()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="tohtml/HtmlTransformer-Standard::Instantiate->tohtml.elements/HtmlTextElement" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate»" size="71,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="163,100" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="32,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="tohtml/HtmlTransformer-Standard::Instantiate->tohtml/HtmlSingleElement" source="//@children.0" target="//@children.2" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate»" size="71,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="100,100" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="37,150"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="tohtml/HtmlElement@root+tohtml/HtmlTransformer@" source="//@children.0" target="//@children.4" targetEnd="//@children.0/@sourceConnections.2/@children.2" label="//@children.0/@sourceConnections.2/@children.0" sourceEnd="//@children.0/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="196,52" id="tohtml/HtmlElement@root+tohtml/HtmlTransformer@|tohtml/HtmlTransformer#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="root" location="0,47" id="tohtml/HtmlElement@root+tohtml/HtmlTransformer@|tohtml/HtmlElement#root" multiplicityLabel="//@children.0/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.0/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ root" location="392,75" size="34,15" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="406,104" size="20,15" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0" name="HtmlTextElement" location="131,241" size="254,168" id="tohtml.elements/HtmlTextElement" runTimeClassModel="getChildren(),text,tag,writeTo(Ljava.io.PrintStream;),addElement(Ltohtml.HtmlElement;),HtmlTextElement(Ljava.lang.String;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="63,34">
+      <children xsi:type="editmodel:AttributeEditModel" name="tag" id="tohtml.elements/HtmlTextElement#tag"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="text" id="tohtml.elements/HtmlTextElement#text"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="231,68">
+      <children xsi:type="editmodel:MethodEditModel" name="HtmlTextElement" id="tohtml.elements/HtmlTextElement#HtmlTextElement(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="writeTo" id="tohtml.elements/HtmlTextElement#writeTo(Ljava.io.PrintStream;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChildren" id="tohtml.elements/HtmlTextElement#getChildren()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addElement" id="tohtml.elements/HtmlTextElement#addElement(Ltohtml.HtmlElement;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tohtml/HtmlElement&lt;-tohtml.elements/HtmlTextElement" source="//@children.1" target="//@children.3/@sourceConnections.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="127,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.1" name="HtmlSingleElement" location="397,241" size="241,151" id="tohtml/HtmlSingleElement" runTimeClassModel="getChildren(),tag,HtmlSingleElement(Ljava.lang.String;),writeTo(Ljava.io.PrintStream;),addElement(Ltohtml.HtmlElement;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="62,17">
+      <children xsi:type="editmodel:AttributeEditModel" name="tag" id="tohtml/HtmlSingleElement#tag"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="218,68">
+      <children xsi:type="editmodel:MethodEditModel" name="HtmlSingleElement" id="tohtml/HtmlSingleElement#HtmlSingleElement(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="writeTo" id="tohtml/HtmlSingleElement#writeTo(Ljava.io.PrintStream;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChildren" id="tohtml/HtmlSingleElement#getChildren()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addElement" id="tohtml/HtmlSingleElement#addElement(Ltohtml.HtmlElement;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tohtml/HtmlElement&lt;-tohtml/HtmlSingleElement" source="//@children.2" target="//@children.3/@sourceConnections.0" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="120,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="133,98"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0 //@children.6/@sourceConnections.0" name="HtmlComposedElement" location="645,225" size="241,150" id="tohtml/HtmlComposedElement" runTimeClassModel="doAfter(Ljava.io.PrintStream;),getChildren(),writeTo(Ljava.io.PrintStream;),addElement(Ltohtml.HtmlElement;),doBefore(Ljava.io.PrintStream;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="218,85">
+      <children xsi:type="editmodel:MethodEditModel" name="addElement" id="tohtml/HtmlComposedElement#addElement(Ltohtml.HtmlElement;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doAfter" id="tohtml/HtmlComposedElement#doAfter(Ljava.io.PrintStream;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doBefore" id="tohtml/HtmlComposedElement#doBefore(Ljava.io.PrintStream;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChildren" id="tohtml/HtmlComposedElement#getChildren()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="writeTo" id="tohtml/HtmlComposedElement#writeTo(Ljava.io.PrintStream;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.1/@sourceConnections.0" autoLocated="true" id="tohtml/HtmlElement&lt;-tohtml/HtmlComposedElement" source="//@children.3" target="//@children.4" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="119,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="119,131" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="tohtml/HtmlElement@children+tohtml/HtmlComposedElement@" source="//@children.3" target="//@children.4" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,15" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="241,42" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="children" location="240,53" id="tohtml/HtmlElement@children+tohtml/HtmlComposedElement@|tohtml/HtmlElement#children" multiplicityLabel="//@children.3/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.3/@sourceConnections.1/@children.2/@children.0" aggregationKind="Aggregration" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - children" location="681,81" size="54,15" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="681,110" size="5,15" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.3/@sourceConnections.1 //@children.0/@sourceConnections.2" name="HtmlElement" location="433,50" size="241,132" id="tohtml/HtmlElement" runTimeClassModel="getChildren(),writeTo(Ljava.io.PrintStream;),addElement(Ltohtml.HtmlElement;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="218,51">
+      <children xsi:type="editmodel:MethodEditModel" name="writeTo" id="tohtml/HtmlElement#writeTo(Ljava.io.PrintStream;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addElement" id="tohtml/HtmlElement#addElement(Ltohtml.HtmlElement;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getChildren" id="tohtml/HtmlElement#getChildren()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="HtmlBody" location="513,462" size="182,100" id="tohtml.elements/HtmlBody" runTimeClassModel="doAfter(Ljava.io.PrintStream;),doBefore(Ljava.io.PrintStream;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="159,34">
+      <children xsi:type="editmodel:MethodEditModel" name="doAfter" id="tohtml.elements/HtmlBody#doAfter(Ljava.io.PrintStream;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doBefore" id="tohtml.elements/HtmlBody#doBefore(Ljava.io.PrintStream;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tohtml/HtmlComposedElement&lt;-tohtml.elements/HtmlBody" source="//@children.5" target="//@children.3" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="156,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="24,150"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="HtmlHead" location="708,462" size="182,100" id="tohtml.elements/HtmlHead" runTimeClassModel="doAfter(Ljava.io.PrintStream;),doBefore(Ljava.io.PrintStream;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="159,34">
+      <children xsi:type="editmodel:MethodEditModel" name="doAfter" id="tohtml.elements/HtmlHead#doAfter(Ljava.io.PrintStream;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doBefore" id="tohtml.elements/HtmlHead#doBefore(Ljava.io.PrintStream;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="tohtml/HtmlComposedElement&lt;-tohtml.elements/HtmlHead" source="//@children.6" target="//@children.3" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="151,150"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=3;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" showMethodsParameterTypes="true" showMethodsReturnType="true" showMethodsParameterNames="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3"/>
+</editmodel:ClassDiagramEditModel>
