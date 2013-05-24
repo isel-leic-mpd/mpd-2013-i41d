@@ -2,6 +2,7 @@ package orm.northwind.test;
 
 import java.sql.SQLException;
 
+import javax.inject.Singleton;
 import javax.sql.DataSource;
 
 import junit.framework.Assert;
@@ -33,6 +34,7 @@ import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 public class TestSupplier {
 
 	private DataMapper<Integer, Supplier> mapper; 
+	private DataMapper<Integer, Product> prodMapper;
 	private JdbcExecutor exec;
 	
 	@Before
@@ -44,14 +46,15 @@ public class TestSupplier {
 				ds.setPassword("fcp");
 				bind(DataSource.class).toInstance(ds);
 				bind(JdbcExecutor.class).to(JdbcExecutorSingleConnection.class);
-				bind(new TypeLiteral<DataMapper<Integer, Product>>(){}).to(JdbcProductsMapper.class).in(Scopes.SINGLETON);
-				bind(new TypeLiteral<DataMapper<Integer, Supplier>>(){}).to(JdbcSuppliersMapper.class).in(Scopes.SINGLETON);
-				bind(new TypeLiteral<DataMapper<Integer, Category>>(){}).to(JdbcCategoryMapper.class).in(Scopes.SINGLETON);
+				bind(new TypeLiteral<DataMapper<Integer, Product>>(){}).to(JdbcProductsMapper.class).in(Singleton.class);
+				bind(new TypeLiteral<DataMapper<Integer, Supplier>>(){}).to(JdbcSuppliersMapper.class).in(Singleton.class);
+				bind(new TypeLiteral<DataMapper<Integer, Category>>(){}).to(JdbcCategoryMapper.class).in(Singleton.class);
 			}
 		});
 		
 		exec = inj.getInstance(JdbcExecutor.class);
 		mapper = inj.getInstance(new Key<DataMapper<Integer, Supplier>>(){});
+		prodMapper = inj.getInstance(new Key<DataMapper<Integer, Product>>(){});
 	}
 	
 	@After
@@ -77,7 +80,17 @@ public class TestSupplier {
 		int[]expected = {9, 74};
 		int i = 0;
 		for (Product p : s.getProducts()) {
-			Assert.assertEquals(expected[i++], p.getId());
+			Assert.assertEquals(expected[i], p.getId());
+			/*
+			 * Here we want to check that the prodMapper will not load a new Product object
+			 * and it will use the same Product that is already stored in the internal identity map.
+			 * Besides that, we are also testing the singleton behavior defined in the Guice 
+			 * configuration module for all DataMappers. If we remove the Singleton scope from the
+			 * JdbcProductsMapper definition (see above) then this test will fail.      
+			 */
+			Assert.assertSame(prodMapper.getById(expected[i]), p);
+			
+			i++;
 		}
 
 		s = mapper.getById(3);
