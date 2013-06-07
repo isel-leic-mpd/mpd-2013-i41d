@@ -42,7 +42,7 @@ public class TestProducts {
 				ds.setUser("myAppUser");
 				ds.setPassword("fcp");
 				bind(DataSource.class).toInstance(ds);
-				bind(JdbcExecutor.class).to(JdbcExecutorSingleConnection.class);
+				bind(JdbcExecutor.class).to(JdbcExecutorSingleConnection.class).in(Scopes.SINGLETON);
 				bind(new TypeLiteral<DataMapper<Integer, Product>>(){}).to(JdbcProductsMapper.class).in(Scopes.SINGLETON);
 				bind(new TypeLiteral<DataMapper<Integer, Supplier>>(){}).to(JdbcSuppliersMapper.class).in(Scopes.SINGLETON);
 				bind(new TypeLiteral<DataMapper<Integer, Category>>(){}).to(JdbcCategoryMapper.class).in(Scopes.SINGLETON);
